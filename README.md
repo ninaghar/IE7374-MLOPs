@@ -31,7 +31,7 @@ My repository structure is:
 └── requirements.txt
 ```
 
-Keep `.github/workflows/` at the **root of the GitHub repository** so GitHub can discover and run the workflow files.
+I included `.github/workflows/` at the **root of the GitHub repository** so GitHub can discover and run the workflow files.
 
 ## 1. Set Up a Virtual Environment
 
@@ -47,17 +47,8 @@ Activate it on macOS or Linux:
 source lab_01/bin/activate
 ```
 
-On Windows Command Prompt:
 
-```bat
-lab_01\Scripts\activate
-```
 
-On Windows PowerShell:
-
-```powershell
-.\lab_01\Scripts\Activate.ps1
-```
 
 When the environment is active, its name should appear in your terminal prompt.
 
