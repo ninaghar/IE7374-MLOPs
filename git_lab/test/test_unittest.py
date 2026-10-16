@@ -42,7 +42,17 @@ class TestCalculator(unittest.TestCase):
         self.assertEqual(calculator.fun5(20, 7), 6)
         self.assertEqual(calculator.fun5(30, 5), 0)
 
+    def test_divide_numbers(self):
+        self.assertEqual(calculator.divide_numbers(9, 3), 3)
+        self.assertEqual(calculator.divide_numbers(15, 3), 5)
+        self.assertEqual(calculator.divide_numbers(20, 4), 5)
+        self.assertEqual(calculator.divide_numbers(30, 5), 6)
 
+    def test_power_numbers(self):
+        self.assertEqual(calculator.power_numbers(2, 1), 2)
+        self.assertEqual(calculator.power_numbers(x, y), 3)
+        self.assertEqual(calculator.power_numbers(x, y), 6)
+        self.assertEqual(calculator.power_numbers(x, y), 0)
 
 if __name__ == '__main__':
     unittest.main()

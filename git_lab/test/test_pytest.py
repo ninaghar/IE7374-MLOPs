@@ -49,5 +49,16 @@ def test_fun5():
     # assert fun4(11,3) == 2
     assert calculator.fun5 (10, 5) == 0
 
+def test_divide_numbers():
+    # assert fun4(11,3) == 2
+    assert calculator.divide_numbers(10, 5) == 2
+    assert calculator.divide_numbers(15, 3) == 5
+    assert calculator.divide_numbers(18, 6) == 3
+
+def test_fun5():
+    # assert fun4(11,3) == 2
+    assert calculator.power_numbers(2, 3) == 8
+    assert calculator.power_numbers(5, 2) == 25
+    assert calculator.power_numbers(3, 3) == 27
 
 
