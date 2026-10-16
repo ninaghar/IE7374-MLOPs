@@ -50,9 +50,9 @@ class TestCalculator(unittest.TestCase):
 
     def test_power_numbers(self):
         self.assertEqual(calculator.power_numbers(2, 1), 2)
-        self.assertEqual(calculator.power_numbers(x, y), 3)
-        self.assertEqual(calculator.power_numbers(x, y), 6)
-        self.assertEqual(calculator.power_numbers(x, y), 0)
+        self.assertEqual(calculator.power_numbers(3, 2), 9)
+        self.assertEqual(calculator.power_numbers(5, 3), 125)
+        self.assertEqual(calculator.power_numbers(7, 2), 49)
 
 if __name__ == '__main__':
     unittest.main()
