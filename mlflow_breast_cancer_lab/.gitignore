@@ -1,0 +1,24 @@
+# Python virtual environments
+.venv/
+venv/
+env/
+
+# Python cache files
+__pycache__/
+*.pyc
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# MLflow experiment data
+mlruns/
+mlartifacts/
+mlflow.db
+*.db
+
+# macOS files
+.DS_Store
+
+# IDE settings
+.vscode/
+.idea/
