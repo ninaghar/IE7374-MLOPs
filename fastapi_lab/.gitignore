@@ -1,0 +1,7 @@
+venv/
+.venv/
+fastapi_lab_env/
+__pycache__/
+*.pyc
+.env
+.DS_Store
