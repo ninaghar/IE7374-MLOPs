@@ -124,21 +124,7 @@ Fill in the values from **your own successful run** before submission:
 
 The original Lab 2 exercise includes notification emails and a second DAG trigger. If you have implemented and verified these features, add a short description and screenshots here. Otherwise, do not claim that email delivery or automatic cross-DAG triggering is complete.
 
-## Submission evidence
 
-Include screenshots (or links to screenshots) showing:
-
-- `Airflow_Lab2` tasks completed successfully in the Airflow Grid/Graph view.
-- Model evaluation output from the `load_model_task` task logs.
-- Flask status page showing the actual pipeline status and run ID.
-- Any additional integrations you tested, such as email notifications or second-DAG triggering.
-
-## Security and cleanup
-
-- Never commit `.env`, passwords, app passwords, Airflow API credentials, or other secrets.
-- Ignore local task logs, Python caches, and transient generated data when appropriate.
-- Review `git status` and `git diff --cached` before pushing.
-- Stop local Airflow containers with `docker compose down` when finished.
 
 ## References
 
