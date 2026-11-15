@@ -120,10 +120,52 @@ Fill in the values from **your own successful run** before submission:
 | Recall | 0.82 |
 | F1-score | 0.81 |
 
-## Optional integrations — document only if tested
+## Email Notifications
 
-The original Lab 2 exercise includes notification emails and a second DAG trigger. If you have implemented and verified these features, add a short description and screenshots here. Otherwise, do not claim that email delivery or automatic cross-DAG triggering is complete.
+The Airflow Lab 2 pipeline includes an automated email notification feature using Apache Airflow's `EmailOperator`.
 
+### Purpose
+
+Email notifications help monitor the machine learning pipeline by informing users when the workflow completes successfully, without requiring them to continuously check the Airflow dashboard.
+
+### Implementation
+
+The email notification task is integrated into the main `Airflow_Lab2` DAG and runs after the Random Forest model has been trained and evaluated.
+
+The workflow follows these steps:
+
+1. Load and preprocess the Wine Quality dataset.
+2. Train the Random Forest classifier.
+3. Evaluate the model using accuracy, precision, recall, and F1-score.
+4. Send an email notification when the preceding tasks complete successfully.
+
+### Email Configuration
+
+The email notification system uses Gmail's SMTP service with the following configuration:
+
+| Setting | Value |
+|---|---|
+| SMTP Server | smtp.gmail.com |
+| SMTP Port | 587 |
+| Encryption | STARTTLS |
+| Authentication | Gmail App Password |
+| Airflow Operator | EmailOperator |
+
+SMTP credentials are stored in a local `.env` file and passed to Airflow through Docker Compose environment variables. The `.env` file is excluded from Git using `.gitignore` to prevent credentials from being uploaded to GitHub.
+
+### Email Notification Content
+
+The notification includes:
+
+- Pipeline name: Wine Quality ML Pipeline
+- Machine learning model: Random Forest Classifier
+- Dataset: UCI Wine Quality
+- Airflow DAG run ID
+- Confirmation of successful pipeline completion
+
+### Benefits
+
+This feature demonstrates how Apache Airflow can automate operational notifications and integrate external services into machine learning workflows.
 
 
 ## References
