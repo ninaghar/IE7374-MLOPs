@@ -194,3 +194,7 @@ The Random Forest classifier was evaluated using accuracy, precision, recall, an
 The Flask dashboard displays the latest Airflow pipeline status and run information.
 
 ![Flask Monitoring Dashboard](screenshots/flask_dashboard.png)
+
+### 4. Email Notification Screenshot
+
+![Airflow Email Notification](screenshots/email_notification.png)
