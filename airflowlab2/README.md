@@ -115,10 +115,10 @@ Fill in the values from **your own successful run** before submission:
 
 | Metric | Value |
 | --- | --- |
-| Accuracy | TODO: paste from task log |
-| Precision | TODO: paste from task log |
-| Recall | TODO: paste from task log |
-| F1-score | TODO: paste from task log |
+| Accuracy | 0.79 |
+| Precision | 0.80 |
+| Recall | 0.82 |
+| F1-score | 0.81 |
 
 ## Optional integrations — document only if tested
 
